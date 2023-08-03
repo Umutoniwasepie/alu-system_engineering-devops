@@ -1,21 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 Page Not Found</title>
-  <link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f0f17;
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+
+        .spaceship img {
+            max-width: 300px;
+        }
+
+        .astronaut {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .astronaut img {
+            max-width: 200px;
+        }
+
+        .search {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1rem;
+            width: 300px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background-color: #0f0f17;
+            color: #fff;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #31313a;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .constellation {
+            text-align: center;
+            font-size: 4rem;
+            margin-top: 50px;
+        }
+
+        .star {
+            color: #ffd700;
+            padding: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .message-in-bottle {
+            background-color: #31313a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #31313a;
+        }
+
+        nav a:hover {
+            background-color: #54545c;
+        }
+
+        .return-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffd700;
+            color: #000;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .return-button:hover {
+            background-color: #ffec80;
+        }
+    </style>
 </head>
 <body>
-  <div class="ocean">
-
-
-    </div>
-    <div class="message">
-      <h1>404</h1>
-      <p>Ceci n'est pas une page </p>
-      <a href="/">Go Back to Safely</a>
-    </div>
-  </div>
+    <header>
+        <h1>Oops, we've lost signal!</h1>
+        <img src="spaceship.png" alt="Lost Astronaut">
+    </header>
+    <main>
+        <div class="spaceship">
+            <img src="astronaut.png" alt="Lost Spaceship">
+        </div>
+        <div class="astronaut">
+            <img src="astronaut_jetpack.png" alt="Astronaut with Jetpack">
+            <p>Our brave astronaut is on the way to fix this!</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search the stars to find your destination!">
+            <button>Search</button>
+        </div>
+        <div class="constellation">
+            <span class="star">4</span>
+            <span class="star">0</span>
+            <span class="star">4</span>
+        </div>
+    </main>
+    <footer>
+        <div class="message-in-bottle">
+            <p>You've found our 404 distress signal! We're working hard to get back on track.</p>
+        </div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#" class="return-button">Return to Earth</a>
+    </footer>
 </body>
 </html>
+
+

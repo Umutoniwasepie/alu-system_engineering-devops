@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#!/bin/bash
-if ! nginx -t 2>/dev/null; then
-  service nginx stop
-fi
+# Open the 80 port
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+pkill -1 nginx
